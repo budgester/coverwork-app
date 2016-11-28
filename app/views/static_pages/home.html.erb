@@ -1,0 +1,24 @@
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Coverwork</title>
+  </head>
+  <body>
+    <div class="center jumbotron">
+      <h1>Welcome to Coverwork</h1>
+      <h2>Coverwork for Schools is an application that allows you to share Cover Work with colleagues and students.</h2>
+      <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
+      <p>In modern day education it is inevitable that at some point a member of staff will be unable to deliver a planned lesson, Coverwork is designed to help in a number of ways
+<ul>
+<li>A useful set of cover work resources when work has not been set.</li>
+<li>A way of allocating resources to Cover teachers.</li>
+<li>Coming soon:</li>
+<li>Android and IOS application</li>
+</ul>
+ </p>
+
+    <%= link_to image_tag("rails.png", alt: "Rails logo"),'http://rubyonrails.org/' %>
+  </body>
+</html>
